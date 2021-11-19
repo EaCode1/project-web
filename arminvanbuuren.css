@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu&display=swap');
+body{
+    margin:0;
+    padding:0;
+    background-image:url(avb3.jpg!d);
+}
+.navpic{
+    position:absolute;
+    left:3%;
+    top:15%;
+    width:30px;
+    height:30px;
+  }
+  .navbar{
+    width:100%;
+    padding:5px;
+    position: fixed;
+    top:0px;
+    transition: .5s;
+    background:black;
+    height:33px;
+  }
+  .navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px 30px;
+    color:white;
+    font-size:15px;
+    font-family:bold;
+    cursor: pointer;
+    border-radius:10px;
+    transition: .5s;
+  }
+  .navbar ul li:hover{
+    color:grey;
+   text-decoration: underline;
+   color:rgba(90, 0, 150, 0.959);
+  }
+  .zones{
+      padding: 300px 300px 0px 0px ;
+      top:60%;
+      width:500px;
+      height:350px;
+  }
+  .box{
+    width:100%;
+    height:800px;
+    background:black;
+    margin:20x auto;
+  }
+.container{
+  max-width:1000px;
+  margin:0 auto;
+}
+.select-box{
+  width:300px;
+}
+.p1{
+  margin-top:24px;
+  color:#fff;
+  position:absolute;
+  left:0%;
+  width:100%;
+  font-size:23px;
+  font-family:bold;
+}
+.p2{
+  margin-top:32px;
+  color:#fff;
+  position:absolute;
+  left:0%;
+  width:100%;
+  font-size:23px;
+  font-family:bold;
+}
+.numtkts{
+  width:207px;
+  border:2px solid rgba(90, 0, 150, 0.959);
+  line-height:18px;
+  font-size:16px;
+  padding:10px 10px;
+  margin-top:24px;
+  margin-left:210px;
+}
+.total{
+  width:150px;
+  height:60px;
+  border:2px solid rgba(90, 0, 150, 0.959);
+  line-height:18px;
+  font-size:16px;
+  padding:10px 10px;
+  margin-top:25px;
+  margin-left:120px;
+  background-color:black;
+  color:White;
+  font-family:bold;
+  font-size:20px;
+}
+.select-box select{
+  margin-top:24px;
+  height:42px;
+  padding:10px 10px;
+  line-height:18px;
+  font-size:16px;
+  width:70%;
+  border:2px solid rgba(90, 0, 150, 0.959);
+  border-radius:8px;
+  -webkit-appearance:none;
+  appearance:none;
+  font-family:bold;
+}
+.select-box:after{
+  content:"";
+  position:absolute;
+  right:8px;
+  top:50%;
+  margin-top:-4px;
+  border-top:8px  solid rgba(90, 0, 150, 0.959);
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+  pointer-events:none;
+}
+.select-box select:focus{
+  border:2px solid rgba(90, 0, 150, 0.959);
+}
+.box:before{
+  content:'';
+  text-align:center;
+  line-height:50px;
+  color:white;
+  position:absolute;
+  top:10%;
+  right:0;
+  width:50px;
+  height:50px;
+  background:#007ce0;
+}
+.box:hover:before{
+  background:#0472ca;
+}
+.payment{
+  background:#f8f8f8;
+  max-width:300px;
+  margin:2px auto;
+  height:400px;
+  padding:35px;
+  padding-top:70px;
+  left:30%;
+  border-radius:5px;
+  position:relative;
+  top:10%;
+}
+.payment h2{
+  text-align:center;
+  letter-spacing:2px;
+  margin-bottom:40px;
+  color:#0d3c64;
+}
+.form .label{
+  display:block;
+  color:#555555;
+  margin-bottom:6px;
+}
+.form .input{
+  padding:13px 0 13px 25px;
+  width:100%;
+  text-align:center;
+  border:2px solid #dddddd;
+  border-radius:5px;
+  letter-spacing:1px;
+  word-wrap:3px;
+  outline:none;
+  font-size:16px;
+  color:#555555;
+}
+.card-grp{
+  display:flex;
+  justify-content:space-between;
+}
+.card-item{
+  width:48%;
+}
+.space{
+  margin-bottom:20px;
+}
+.icon-relative{
+  position:relative;
+}
+.icon-relative .fa{
+  position:absolute;
+  bottom:17px;
+  left:15px;
+  font-size:20px;
+  color:#555555;
+}
+.btn{
+  margin-top:40px;
+  background:rgba(90, 0, 150, 0.959);
+  padding:12px;
+  text-align:center;
+  color:#f8f8f8;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:15px;
+  font-family:bold;
+}
+.btnprice{
+  border:0;
+  background:rgba(90, 0, 150, 0.959);
+  color:#fff;
+  padding:12px 50px;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.5s;
+  margin-top:30px;
+  margin-left:60px;
+  width:20%;
+  font-family:Bold;
+  font-size:20px;
+}
+.payment-logo{
+  position:absolute;
+  top:-50px;
+  left:50%;
+  transform:translate(-50%);
+  width:100px;
+  height:100px;
+  background:#f8f8f8;
+  border-radius:50%;
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:18px;
+}
+.payment-logo:before{
+  content:"";
+  position:absolute;
+  top:5px;
+  left:5px;
+  width:90px;
+  height:90px;
+  background:rgba(90, 0, 150, 0.959);
+  border-radius:50%;
+}
+.payment-logo p{
+  color:#f8f8f8;
+  position:relative;
+  font-family: 'baloo bhaijaan' , cursive;
+  font-size:58px;
+}
+@media screen and (max-width:470px){
+  .card-grp{
+    flex-direction:column;
+  }
+  .card-item{
+    width:100%;
+    margin-bottom:20px;
+  }
+  .btn{
+    margin-bottom:20px;
+  }
+}

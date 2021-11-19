@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kygo</title>
+        <link rel="stylesheet" href="kygo.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+</head>
+ <body>
+    <div class="header">
+      <div class="navbar">
+                <ul>
+                <li><img src="project.logo2.jpg" class="navpic"></li>
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/index.html"><li>HOME</li></a>
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/about.html"><li>ABOUT</li></a>
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/3dslides.html"><li>EVENTS</li></a>   
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/contactus.html"><li>CONTACT |</li></a>   
+                <li><i class="fa fa-facebook-official" aria-hidden="true" ></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+        </div>
+    </div>
+<img src="zones.png" class="zones" size="20px">
+    <div class="box">
+        <div class="container">
+            <div class="select-box">
+           <p class="p1">Select your Zone:</p> <select  id="zone">
+                <option>Bronze</option>
+                <option>Silver</option>
+                <option>Gold</option>
+                <option>Vip</option>
+            </select></div>
+        </div>
+        <p class="p2">Number of tickets:</p>
+        <input type="number" id="numTkts" class="numtkts"><br>
+        <button class="btnprice" onclick="getPrice();">Total Price</button><br>
+        <input class="total" id="price" readonly>
+<script>
+     var total=0;
+    function getPrice(){
+     var numT=parseInt(document.getElementById("numTkts").value);
+      if(numT<0){
+          numT=abs(numT);
+              document.getElementById("numTkts").value=numT;
+   }
+     switch(document.getElementById("zone").value){
+        case "Gold":total=150*numT;
+        break;
+        case "Silver":total=100*numT;
+        break;
+        case "Bronze":total=70*numT;
+        break;
+        case "Vip":total=250*numT;
+        break;
+    }
+      document.getElementById("price").value=total+"$";
+       }
+ </script>
+ <div class="wrapper">
+     <div class="payment">
+         <div class="payment-logo">
+            <p>$</p>
+         </div>
+        <h2>Payment</h2>
+           <div class="form">
+           <div class="card space icon-relative">
+           <label class="label">Card holder:</label>
+           <input type="text" class="input" name="card_holder" placeholder="coding market">
+           <i class="fa fa-user" aria-hidden="true"></i>
+     </div>
+ <div class="card space icon-relative">
+  <label class="label">Card number:</label>
+  <input type="text" class="input" name="card_number" placeholder="card number" data-mask="0000 0000 0000 0000">
+     <i class="fa fa-credit-card" aria-hidden="true"></i>
+     </div>
+     <div class="card-grp space">
+     <div class="card-item icon-relative">
+  <label class="label">Expiry date</label>
+     <input type="text" class="input" name="expiry_date" placeholder="00 / 00" data-mask=" 00 / 00">
+     <i class="fa fa-calendar" aria-hidden="true"></i>
+     </div>
+    <div class="card-item icon-relative">
+     <label class="label">CVC:</label>
+     <input type="text" class="input" name="cvc" placeholder="000" data-mask="000">
+     <i class="fa fa-lock" aria-hidden="true"></i>
+     </div>
+    </div>
+    <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/index.html"><div class="btn">
+     PAY
+    </div></a>
+      </div>
+    </div>
+  </div>
+</div>  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    </body>
+</html>

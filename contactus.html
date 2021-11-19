@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="contactus.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <script>
+    function thankyou(){
+        window.alert("Thank you for your message!");
+    }
+    </script>
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <ul>
+                <li><img src="project.logo2.jpg" class="navpic"></li>
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/index.html"><li>HOME</li></a>
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/about.html"><li>ABOUT</li></a>
+                <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/3dslides.html"><li>EVENTS</li></a>   
+                <li>CONTACT |</li>   
+                <li><i class="fa fa-facebook-official" aria-hidden="true" ></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="contactus.html" method="post">
+                <input type="text" class="contact-form-text" placeholder="your name">
+                <input type="email" class="contact-form-text" placeholder="your email">
+                <input type="text" class="contact-form-text" placeholder="your phoen number">
+                <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                 <a href="file:///C:/Users/elie%20aoun/Desktop/project%20i2201/index.html"><input type="submit" onclick="thankyou()" class="contact-form-btn" value="send"></a>
+            </form>
+        </div>
+     </body>
+</html>
